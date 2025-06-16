@@ -1,4 +1,4 @@
-<img src="https://graph.org/file/77d2eddf9657a87acb881.jpg" alt="logo" target="/blank">
+<img src="https://graph.org/file/ff5c343fe3cbfc07f8a94-8fdc613d0a74644f68.jpg" alt="logo" target="/blank">
 
 <h1 align="center">
  <b><a href="https://t.me/RDX_PVT_BOT" target="/blank"> Rename Bot 2GB </a></>
