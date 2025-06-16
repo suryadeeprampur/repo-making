@@ -1,0 +1,67 @@
+{
+    "name": "RDX PVT LTD",
+    "description": "Telegram File Renamer Bot 2GB",
+    "logo": "https://graph.org/file/ff5c343fe3cbfc07f8a94-8fdc613d0a74644f68.jpg",
+    "keywords": ["RDX", "Mongo DB"],    
+    "repository": "https://github.com/suryadeeprampur/RDX_PVT_LTD.git",
+    "env": {
+        "API_ID": {
+            "description": "Your APP ID From my.telegram.org ",
+            "value": "",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "Your API Hash From my.telegram.org ",
+            "value": "",
+            "required": true
+        },
+        "WEBHOOK": {
+            "description": "if your server is need web service! value = True else value = False",
+            "value": "False",
+            "required": false
+        },
+        "FORCE_SUBS": {
+            "description": "Your force sub channel user name without [@] ",
+            "value": "",
+            "required": false 
+        },
+        "BOT_TOKEN": {
+            "description": "Your Bot Token From @BotFather",
+            "value": "",
+            "required": true
+        },
+        "ADMIN": {
+            "description":"Add Your User ID multiple is use space to split",
+            "value": "",
+            "required": true
+        },
+        "LOG_CHANNEL": {
+            "description":"Bot Log Sending Channel (just create a private channel and add bot to admin and take channel id to add this variable) ⚠️ id startswith -100 must",
+            "value": "",
+            "required": true          
+        },
+        "DATABASE_URL": {
+            "description": "Your Mongo DB URL Obtained From mongodb.com",
+            "value": "",
+            "required": true
+        },
+        "DATABASE_NAME":{ 
+            "description":"Your Mongo DB Database Name ",
+            "value": "RDX",
+            "required": false
+        },
+        "START_PIC": {
+            "description": "Your Bot start cmd Pic from @MT_TelegraPH_Bot",
+            "value": "https://graph.org/file/ff5c343fe3cbfc07f8a94-8fdc613d0a74644f68.jpg",
+            "required": false
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "https://github.com/suryadeeprampur/RDX_PVT_LTD.git"
+        }
+    ]
+}
