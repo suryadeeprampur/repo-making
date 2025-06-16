@@ -88,11 +88,4 @@ status - Check bot status [FOR ADMINS USE ONLY].
 - [RDX Botz](https://t.me/RDX_PVT_LTD)
 - [RDX Support Group](https://t.me/RDX_PVT_GROUP)
 
-### 💕 CONTACT DEVELOPER 💕
-- [Jishu Developer](https://t.me/JishuDeveloper)
-- [Madflix Official](https://t.me/MadflixSupport)
 
-### ☕ BUY ME A COFFEE ☕
-- [PayPal](https://paypal.me/jishudeveloper/2.50USD)
-- [PhonePe](https://graph.org/file/6822df5af3a2e80637172.jpg)
-- [UPI](https://graph.org/file/b831109be4acff5c966d2.jpg)
