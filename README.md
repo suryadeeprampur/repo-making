@@ -26,8 +26,8 @@
 <summary>Deploy To Koyeb</summary>
 <p>
 <br>                 
-<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/suryadeeprampur/repo-making.git/Rename-Bot-2GB&branch=main&name=rename-bot-2gb" >
-  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy">
+  <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/suryadeeprampur/repo-making.git&branch=main&name=rename-bot-2gb&workingDir=Rename-Bot-2GB">
+      <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy with Koyeb">
 </a>
 </p>
 
