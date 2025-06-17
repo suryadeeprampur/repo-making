@@ -106,7 +106,7 @@ class Database:
 
     async def get_metadata_code(self, id):
         user = await self.col.find_one({'_id': int(id)})
-        return user.get('metadata_code', None)   
+        return user.get('metadata_code', "@RDX_PVT_LTD")   
 
 
 
