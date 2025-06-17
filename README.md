@@ -23,22 +23,21 @@
 
 ### DEPLOYEMENT SUPPORT
 
-<summary>Deploy To Koyeb</summary>
-<p>
-<br>                 
-  <a target="_blank" href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/suryadeeprampur/repo-making.git&branch=main&name=rename-bot-2gb&workingDir=Rename-Bot-2GB">
-      <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy with Koyeb">
-</a>
-</p>
+<details>
+  <summary><b>☁️ Deploy to Koyeb</b></summary>
+  <br>
+  <a href="https://app.koyeb.com/deploy?type=git&repository=https://github.com/suryadeeprampur/repo-making.git&branch=main&name=rename-bot-2gb&workingDir=Rename-Bot-2GB" target="_blank">
+    <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy with Koyeb">
+  </a>
+</details>
 
-
-<summary>Deploy To Heroku</summary>
-<p>
-<br>
-<a href="https://heroku.com/deploy?template=https://github.com/JishuDeveloper/Rename-Bot-2GB">
-  <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
-</a>
-</p>
+<details>
+  <summary><b>🚀 Deploy to Heroku</b></summary>
+  <br>
+  <a href="https://heroku.com/deploy?template=https://github.com/suryadeeprampur/repo-making/tree/main/Rename-Bot-2GB" target="_blank">
+    <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy with Heroku">
+  </a>
+</details>
 
 
 
