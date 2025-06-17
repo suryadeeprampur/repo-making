@@ -1,6 +1,6 @@
 import os, time, re
-id_pattern = re.compile(r'^.\d+$')
 
+id_pattern = re.compile(r'^.\d+$')
 
 
 class Config(object):
@@ -8,23 +8,22 @@ class Config(object):
     API_ID    = os.environ.get("API_ID", "")
     API_HASH  = os.environ.get("API_HASH", "")
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
-   
+
     # database config
-    DATABASE_NAME = os.environ.get("DATABASE_NAME","")     
-    DATABASE_URL  = os.environ.get("DATABASE_URL","")
- 
+    DATABASE_NAME = os.environ.get("DATABASE_NAME", "")     
+    DATABASE_URL  = os.environ.get("DATABASE_URL", "")
+
     # other configs
-    BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
+    BOT_UPTIME = time.time()
+    START_PIC  = os.environ.get("START_PIC", "")
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
 
-    # channels logs
-    FORCE_SUBS   = os.environ.get("FORCE_SUBS", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    # channels and logs
+    FORCE_SUBS  = os.environ.get("FORCE_SUBS", "")
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002765488398"))  # ✅ Corrected ID
 
-    # wes response configuration     
+    # webhook config
     WEBHOOK = bool(os.environ.get("WEBHOOK", False))
-
 
 
 class Txt(object):
@@ -93,7 +92,6 @@ If You Like My Bots & Projects, You Can 🎁 Donate Me Any Amount From 10 Rs Upt
 <b>🛍 UPI ID:</b> `RDX_PVT_LTD`
 """
 
-
     SEND_METADATA = """<b><u>🖼️  HOW TO SET CUSTOM METADATA</u></b>
 
 For Example :-
@@ -103,15 +101,8 @@ For Example :-
 💬 For Any Help Contact @RDX_PVT_LTD
 """
 
-
-
-
-
-
-
 # RDX Developer 
 # Don't Remove Credit 🥺
 # Telegram Channel @RDX_PVT_LTD
-# Backup Channel @RDX_PVT_LTD
 # Developer @RDX_PVT_LTD
 # Contact @RDX1444
