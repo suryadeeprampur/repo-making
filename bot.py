@@ -7,12 +7,12 @@ from aiohttp import web
 from route import web_server
 import pyromod
 import pyrogram.utils
+import asyncio
 
 pyrogram.utils.MIN_CHANNEL_ID = -100999999999999
 
 
 class Bot(Client):
-
     def __init__(self):
         super().__init__(
             name="renamer",
@@ -28,30 +28,48 @@ class Bot(Client):
         await super().start()
         me = await self.get_me()
         self.mention = me.mention
-        self.username = me.username  
-        self.uptime = Config.BOT_UPTIME     
+        self.username = me.username
+        self.uptime = Config.BOT_UPTIME
+
         if Config.WEBHOOK:
             app = web.AppRunner(await web_server())
-            await app.setup()       
-            await web.TCPSite(app, "0.0.0.0", 8080).start()     
+            await app.setup()
+            await web.TCPSite(app, "0.0.0.0", 8080).start()
+
         print(f"{me.first_name} Is Started.....✨️")
         for id in Config.ADMIN:
-            try: await self.send_message(id, f"**{me.first_name}  Is Started...**")                                
-            except: pass
-        
+            try:
+                await self.send_message(id, f"**{me.first_name}  Is Started...**")
+            except:
+                pass
+
         if Config.LOG_CHANNEL:
             try:
                 curr = datetime.now(timezone("Asia/Kolkata"))
                 date = curr.strftime('%d %B, %Y')
                 time = curr.strftime('%I:%M:%S %p')
-                await self.send_message(Config.LOG_CHANNEL, f"**{me.mention} Is Restarted !!**\n\n📅 Date : `{date}`\n⏰ Time : `{time}`\n🌐 Timezone : `Asia/Kolkata`\n\n🉐 Version : `v{__version__} (Layer {layer})`</b>")                                
+                await self.send_message(
+                    Config.LOG_CHANNEL,
+                    f"**{me.mention} Is Restarted !!**\n\n"
+                    f"📅 Date : `{date}`\n"
+                    f"⏰ Time : `{time}`\n"
+                    f"🌐 Timezone : `Asia/Kolkata`\n\n"
+                    f"🉐 Version : `v{__version__} (Layer {layer})`"
+                )
             except:
                 print("Please Make This Is Admin In Your Log Channel")
 
-Bot().run()
+
+# ---------- Run the bot correctly ----------
+async def main():
+    bot = Bot()
+    await bot.start()
+    print("Bot is running...")
+    await asyncio.Event().wait()  # Keeps the bot alive
 
 
-
+if __name__ == "__main__":
+    asyncio.run(main())
 
 
 # RDX Developer 
